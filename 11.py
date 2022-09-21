@@ -62,7 +62,7 @@ print(fencing_value)
 
 
 # 11.12.2.1
-Junior = {}
+Junior = {'SI 206':4, 'SI 310':4, 'BL 300':3, 'TO 313':3, 'BCOM 350':1, 'MO 300':3}
 credits = 0
 for c in Junior.values():
     credits += c
