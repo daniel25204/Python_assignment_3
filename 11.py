@@ -132,8 +132,8 @@ print(wrd_d)
 # 11.12.2.6
 sally = "sally sells sea shells by the sea shore"
 characters = {}
-words = sally.split(' ')
-for w in words:
+# words = sally.split(' ')
+for w in sally:
     if w not in characters.keys():
         characters[w] = 1
     else:
@@ -153,11 +153,12 @@ print(best_char)
 
 
 
+
 # 11.12.2.7
-sally = "sally sells sea shells by the sea shore"
+sally = "sally sells sea shells by the sea shore and by the road"
 characters = {}
-words = sally.split(' ')
-for w in words:
+# words = sally.split(' ')
+for w in sally:
     if w not in characters.keys():
         characters[w] = 1
     else:
@@ -179,7 +180,7 @@ print(worst_char)
 # 11.12.2.8
 string1 = "There is a tide in the affairs of men, Which taken at the flood, leads on to fortune. Omitted, all the voyage of their life is bound in shallows and in miseries. On such a full sea are we now afloat. And we must take the current when it serves, or lose our ventures."
 letter_counts = {}
-words = [word.lower() for word in string1.split(' ')]
+words = [word for word in string1.lower()]
 for w in words:
     if w not in letter_counts.keys():
         letter_counts[w] = 1
