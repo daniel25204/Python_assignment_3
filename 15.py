@@ -2,7 +2,7 @@
 def mult(x, y=6):
     if type(x) == int:
         return x * y
-    raise TypeError("The first argument should be an Integer.")
+    # raise TypeError("The first argument should be an Integer.")
 
 print(mult(4,5))
 print(mult(4))
@@ -13,12 +13,12 @@ print(mult("s"))
 
 
 # 15.7.2
-def greeting(name, greeting="Hello", excl="!"):
+def greeting(name, greeting="Hello ", excl="!"):
     return greeting + name + excl
 
 print(greeting("Bob"))
 print(greeting(""))
-print(greeting("Bob", excl="!!!"))
+print(greeting("Bob", excl="!!!"))s
 
 
 
