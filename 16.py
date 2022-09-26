@@ -34,13 +34,7 @@ print(top_three)
 
 # 16.9.8
 groceries = {'apples': 5, 'pasta': 3, 'carrots': 12, 'orange juice': 2, 'bananas': 8, 'popcorn': 1, 'salsa': 3, 'cereal': 4, 'coffee': 5, 'granola bars': 15, 'onions': 7, 'rice': 1, 'peanut butter': 2, 'spinach': 9}
-rev = {}
-for k,v in groceries.items():
-    rev[v] = k
-
-most_needed = []
-for i in sorted(rev, reverse=True):
-    most_needed.append(rev[i])
+most_needed =  list(dict(sorted(groceries.items(), key=lambda item : item[1])).keys())[::-1]
 print(most_needed)
 
 
@@ -57,8 +51,8 @@ print(sorted_ids)
 
 # 16.9.10
 ids = [17573005, 17572342, 17579000, 17570002, 17572345, 17579329]
-sorted_ids = sorted(ids, key=lambda num: str(num)[-4:])
-print(sorted_ids)
+sorted_id = sorted(ids, key=lambda num: str(num)[-4:])
+print(sorted_id)
 
 
 
